@@ -1,0 +1,85 @@
+==========================================================
+PART (C): COMPLETE GIT WORKFLOW DEMONSTRATION
+==========================================================
+
+=== 1. REPOSITORY INITIALIZATION ===
+Initialized empty Git repository in /home/pavankumar/waf-assn-8/part_c/.git/
+Repository initialized with main branch.
+
+=== 2. FILE TRACKING AND STAGING ===
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	app.py
+	demo_complete_git_workflow.sh
+	git_workflow_output.txt
+	templates/
+
+nothing added to commit but untracked files present (use "git add" to track)
+A  app.py
+A  templates/index.html
+?? demo_complete_git_workflow.sh
+?? git_workflow_output.txt
+
+=== 3. COMMITTING CHANGES ===
+[main (root-commit) 4c84ae3] feat: Initial commit of Online Student Course Registration System
+ 2 files changed, 120 insertions(+)
+ create mode 100644 app.py
+ create mode 100644 templates/index.html
+
+=== 4. REMOTE REPOSITORY MANAGEMENT ===
+Initialized empty Git repository in /home/pavankumar/waf-assn-8/part_c/remote_course_repo.git/
+origin	/home/pavankumar/waf-assn-8/part_c/remote_course_repo.git (fetch)
+origin	/home/pavankumar/waf-assn-8/part_c/remote_course_repo.git (push)
+To /home/pavankumar/waf-assn-8/part_c/remote_course_repo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+=== 5. BRANCHING ===
+Switched to a new branch 'feature-course-limit'
+* feature-course-limit
+  main
+
+=== 6. MODIFYING FILES ON BRANCH & COMMITTING ===
+[feature-course-limit 37e6dab] feat(courses): Add maximum enrollment limit validation
+ 1 file changed, 1 insertion(+)
+
+=== 7. MERGING BRANCH INTO MAIN ===
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Updating 4c84ae3..37e6dab
+Fast-forward (no commit created; -m option ignored)
+ app.py | 1 +
+ 1 file changed, 1 insertion(+)
+Deleted branch feature-course-limit (was 37e6dab).
+To /home/pavankumar/waf-assn-8/part_c/remote_course_repo.git
+   4c84ae3..37e6dab  main -> main
+
+=== 8. COLLABORATIVE DEVELOPMENT (SIMULATION) ===
+--- Collaborator clones the remote GitHub repository ---
+Cloning into 'collaborator_workspace'...
+done.
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+--- Collaborator makes a contribution and commits ---
+[main 293496a] collab: Add registration audit logging
+ 1 file changed, 1 insertion(+)
+To /home/pavankumar/waf-assn-8/part_c/remote_course_repo.git
+   37e6dab..293496a  main -> main
+
+--- Original developer fetches and pulls collaborator updates ---
+From /home/pavankumar/waf-assn-8/part_c/remote_course_repo
+ * branch            main       -> FETCH_HEAD
+   37e6dab..293496a  main       -> origin/main
+Updating 37e6dab..293496a
+Fast-forward
+ app.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+=== 9. VERIFYING COMPLETE COMMIT GRAPH & HISTORY ===
+* 293496a collab: Add registration audit logging
+* 37e6dab feat(courses): Add maximum enrollment limit validation
+* 4c84ae3 feat: Initial commit of Online Student Course Registration System

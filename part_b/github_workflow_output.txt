@@ -1,0 +1,53 @@
+=== STEP 1: Creating Remote Repository (Simulating GitHub Remote) ===
+Initialized empty Git repository in /home/pavankumar/waf-assn-8/part_b/remote_github_repo.git/
+Remote repo created at: /home/pavankumar/waf-assn-8/part_b/remote_github_repo.git
+(In real GitHub, this corresponds to: https://github.com/<username>/student-mgmt.git)
+
+=== STEP 2: Cloning the Remote Repository to Local System ===
+Cloning into 'local_repo'...
+warning: You appear to have cloned an empty repository.
+done.
+
+=== STEP 3: Adding Project Files to the Cloned Local Repo ===
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	app.py
+	templates/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+=== STEP 4: Staging and Committing Changes ===
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   app.py
+	new file:   templates/index.html
+
+[main (root-commit) 58d61d8] feat: Initial commit of Student Information Management System
+ 2 files changed, 74 insertions(+)
+ create mode 100644 app.py
+ create mode 100644 templates/index.html
+
+=== STEP 5: Pushing the Project to Remote (GitHub) ===
+To /home/pavankumar/waf-assn-8/part_b/remote_github_repo.git
+ * [new branch]      main -> main
+
+=== STEP 6: Modifying Project Files (e.g. Updating Student Management) ===
+ M app.py
+[main ab25235] chore: Update app.py with logging comment
+ 1 file changed, 1 insertion(+)
+To /home/pavankumar/waf-assn-8/part_b/remote_github_repo.git
+   58d61d8..ab25235  main -> main
+
+=== STEP 7: Verification of Remote and Git Log ===
+origin	/home/pavankumar/waf-assn-8/part_b/remote_github_repo.git (fetch)
+origin	/home/pavankumar/waf-assn-8/part_b/remote_github_repo.git (push)
+ab25235 chore: Update app.py with logging comment
+58d61d8 feat: Initial commit of Student Information Management System

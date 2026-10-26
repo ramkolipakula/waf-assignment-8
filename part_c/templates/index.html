@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Student Course Registration System</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; margin: 0; padding: 30px; }
+        .wrapper { max-width: 900px; margin: 0 auto; background: #ffffff; border-radius: 10px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        h1 { color: #1e293b; margin-bottom: 20px; font-size: 24px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 30px; }
+        .card { background: #f1f5f9; padding: 20px; border-radius: 8px; border: 1px solid #cbd5e1; }
+        .card h3 { margin-top: 0; color: #334155; }
+        label { display: block; margin-top: 10px; font-weight: 600; color: #475569; }
+        input, select { width: 100%; box-sizing: border-box; padding: 10px; margin-top: 5px; border: 1px solid #cbd5e1; border-radius: 6px; }
+        button { margin-top: 15px; width: 100%; padding: 10px; background-color: #2563eb; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; }
+        button:hover { background-color: #1d4ed8; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #e2e8f0; padding: 10px 12px; text-align: left; }
+        th { background-color: #3b82f6; color: white; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1>Online Student Course Registration System</h1>
+    
+    <div class="grid">
+        <!-- Available Courses -->
+        <div class="card">
+            <h3>Available Courses</h3>
+            <ul>
+                {% for c in courses %}
+                <li><strong>{{ c.code }}</strong>: {{ c.title }} ({{ c.credits }} Credits)</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="card">
+            <h3>Register for a Course</h3>
+            <form action="/register" method="POST">
+                <label>Student ID:</label>
+                <input type="text" name="student_id" placeholder="e.g. STU105" required>
+
+                <label>Student Name:</label>
+                <input type="text" name="student_name" placeholder="e.g. John Doe" required>
+
+                <label>Select Course:</label>
+                <select name="course_code" required>
+                    {% for c in courses %}
+                    <option value="{{ c.code }}">{{ c.code }} - {{ c.title }}</option>
+                    {% endfor %}
+                </select>
+
+                <button type="submit">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Enrolled Students Table -->
+    <h3>Current Registrations</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Enrolled Course</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reg in registrations %}
+            <tr>
+                <td>{{ reg.student_id }}</td>
+                <td>{{ reg.student_name }}</td>
+                <td>{{ reg.course_code }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

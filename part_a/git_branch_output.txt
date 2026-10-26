@@ -1,0 +1,37 @@
+=== 1. Initializing Git Repository ===
+Initialized empty Git repository in /home/pavankumar/waf-assn-8/part_a/.git/
+[main (root-commit) 44979ae] Initial commit: Basic Student Information Management System
+ 2 files changed, 85 insertions(+)
+ create mode 100644 app.py
+ create mode 100644 templates/index.html
+
+=== 2. Creating a new branch (feature-search) ===
+  feature-search
+* main
+
+=== 3. Switching to branch (feature-search) ===
+Switched to branch 'feature-search'
+
+=== 4. Modifying code on feature-search branch ===
+ M app.py
+?? demo_git_branch.sh
+?? git_branch_output.txt
+[feature-search 34c2467] feat: Add search module placeholder on feature branch
+ 1 file changed, 1 insertion(+)
+
+=== 5. Switching back to main branch ===
+Switched to branch 'main'
+
+=== 6. Merging feature-search branch into main ===
+Updating 44979ae..34c2467
+Fast-forward (no commit created; -m option ignored)
+ app.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+=== 7. Deleting feature-search branch ===
+Deleted branch feature-search (was 34c2467).
+* main
+
+=== 8. Verification of Commit History ===
+* 34c2467 (HEAD -> main) feat: Add search module placeholder on feature branch
+* 44979ae Initial commit: Basic Student Information Management System
