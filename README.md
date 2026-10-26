@@ -2,8 +2,20 @@
 
 ## Table of Contents
 1. [Part (a): Student Information Management System & Git Branch Management](#part-a-student-information-management-system--git-branch-management)
+   - [1. Overview](#1-overview)
+   - [2. How to Run the App](#2-how-to-run-the-app)
+   - [3. Step-by-Step Git Commands & Output](#3-step-by-step-git-commands--output)
+   - [4. Application Screenshots](#4-application-screenshots)
 2. [Part (b): Student Information Management System & Git/GitHub Workflow](#part-b-student-information-management-system--gitgithub-workflow)
+   - [1. Overview](#1-overview-1)
+   - [2. How to Run the App](#2-how-to-run-the-app-1)
+   - [3. Step-by-Step Git & GitHub Commands & Output](#3-step-by-step-git--github-commands--output)
+   - [4. Application Screenshots](#4-application-screenshots-1)
 3. [Part (c): Online Student Course Registration System & Complete Git Workflow](#part-c-online-student-course-registration-system--complete-git-workflow)
+   - [1. Overview](#1-overview-2)
+   - [2. How to Run the App](#2-how-to-run-the-app-2)
+   - [3. Step-by-Step Complete Git Workflow Commands & Output](#3-step-by-step-complete-git-workflow-commands--output)
+   - [4. Application Screenshots](#4-application-screenshots-2)
 
 ---
 
@@ -60,6 +72,24 @@ git branch -d feature-search
 git log --oneline --graph
 ```
 
+### 4. Application Screenshots
+
+#### 4.1 Initial Student List View
+Displays the initial student database records (`John Doe`, `Jane Smith`), table action links, and the empty student input form.
+![Part (a) Initial Student List](screenshots/part_a_1_initial_list.png)
+
+#### 4.2 Adding a New Student Record
+Demonstrates filling out the student input form with new details (`Emily Davis`, `emily.davis@example.com`, `Artificial Intelligence`).
+![Part (a) Add Student Form Filled](screenshots/part_a_2_add_student_form.png)
+
+#### 4.3 Student Added Successfully
+Displays the updated student database table with the newly registered student record dynamically appended.
+![Part (a) Student Added to Table](screenshots/part_a_3_student_added.png)
+
+#### 4.4 Deleting a Student Record
+Demonstrates record removal when the "Delete" action is clicked, updating the table immediately.
+![Part (a) Student Deleted](screenshots/part_a_4_student_deleted.png)
+
 ---
 
 ## Part (b): Student Information Management System & Git/GitHub Workflow
@@ -109,6 +139,20 @@ git push origin main
 git remote -v
 git log --oneline
 ```
+
+### 4. Application Screenshots
+
+#### 4.1 Initial Student Management Page
+Displays pre-existing enrolled student records (`Alice Johnson`, `Bob Williams`) and the registration form for roll number, name, and department.
+![Part (b) Initial Student Records](screenshots/part_b_1_initial_list.png)
+
+#### 4.2 Student Registration Form Entry
+Demonstrates entering new student details (`Roll No: 103`, `Name: Charlie Davis`, `Department: Information Science`).
+![Part (b) Registration Form Filled](screenshots/part_b_2_registration_form.png)
+
+#### 4.3 Student Successfully Registered
+Displays the updated student records table displaying the new entry added via the POST request.
+![Part (b) Student Registered](screenshots/part_b_3_student_registered.png)
 
 ---
 
@@ -184,3 +228,17 @@ git log --graph --oneline --all
 # * 37e6dab feat(courses): Add maximum enrollment limit validation
 # * 4c84ae3 feat: Initial commit of Online Student Course Registration System
 ```
+
+### 4. Application Screenshots
+
+#### 4.1 Course Registration Dashboard
+Displays the available courses card (`CS101`, `CS102`, `CS103`, `CS104`), student course registration form, and current registrations table.
+![Part (c) Course Registration Dashboard](screenshots/part_c_1_course_registration_dashboard.png)
+
+#### 4.2 Registering for a Course
+Demonstrates filling out the registration form (`Student ID: STU003`, `Student Name: Ananya Sharma`) and selecting `CS103 - Operating Systems & Linux` from the dropdown.
+![Part (c) Fill Course Registration Form](screenshots/part_c_2_fill_course_form.png)
+
+#### 4.3 Course Registration Submitted
+Displays the updated Current Registrations table with the new course enrollment recorded and rendered.
+![Part (c) Course Registration Submitted](screenshots/part_c_3_course_registered.png)
